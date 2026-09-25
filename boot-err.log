@@ -1,0 +1,4 @@
+[90m[02:01:07][39m [33m[Warning][39m Attempting to connect to the Discord bot... (1)
+[90m[02:01:09][39m [33m[Warning][39m Attempting to register application commands... (this might take a while!)
+(node:11244) Warning: Supplying "ephemeral" for interaction response options is deprecated. Utilize flags instead.
+(Use `node --trace-warnings ...` to show where the warning was created)

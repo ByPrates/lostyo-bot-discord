@@ -1,0 +1,448 @@
+{
+  "handler": {
+    "not_bot_owner": "You can't do that, only the bot owner can!",
+    "not_bot_developer": "You are not a bot developer!",
+    "not_guild_owner": "Only the server owner can do that!",
+    "channel_not_nsfw": "Use this in an NSFW channel!",
+    "missing_permissions": "You don't have permission to do that.",
+    "component_not_public": "You are not the author of this interaction!",
+    "cooldown": "Wait {cooldown}s before using this again."
+  },
+  "ping": {
+    "response": "**Pong!** {ping}ms"
+  },
+  "ban": {
+    "not_found": "Member not found.",
+    "success": "🔨 {user} banned. Reason: {reason}"
+  },
+  "kick": {
+    "not_found": "Member not found.",
+    "success": "👢 {user} kicked. Reason: {reason}"
+  },
+  "timeout": {
+    "not_found": "Member not found.",
+    "success": "⏱️ {user} timed out for {minutes}min."
+  },
+  "mod_error": "Error: {error}",
+  "common": {
+    "member_not_found": "Member not found.",
+    "user_not_found": "User not found.",
+    "no_permission_bot": "I don't have permission to do that."
+  },
+  "warn": {
+    "success": "**{user}** warned. Total: **{total}**. Reason: {reason}",
+    "case": "Case #{id}"
+  },
+  "warnings": {
+    "title": "Warnings for {user}",
+    "empty": "No warnings.",
+    "line": "#{id} — {reason} · <t:{ts}:R>"
+  },
+  "clearwarn": {
+    "one": "Warning #{id} removed.",
+    "all": "All warnings cleared ({n}).",
+    "not_found": "Warning not found."
+  },
+  "note": {
+    "success": "Note added for **{user}**."
+  },
+  "notes": {
+    "empty": "No notes.",
+    "line": "#{id} — {text} · <t:{ts}:R>"
+  },
+  "case": {
+    "not_found": "Case not found.",
+    "line": "#{id} · {action} · {user} · {reason} · <t:{ts}:R>"
+  },
+  "history": {
+    "empty": "No history.",
+    "title": "History for {user}"
+  },
+  "modlog": {
+    "empty": "No mod actions recorded.",
+    "title": "Mod log"
+  },
+  "modstats": {
+    "empty": "No stats yet.",
+    "title": "Mod stats",
+    "line": "<@{id}> — **{n}** actions"
+  },
+  "purge": {
+    "success": "Deleted **{n}** messages.",
+    "invalid": "Amount must be 1-100."
+  },
+  "lock": {
+    "locked": "Channel locked.",
+    "unlocked": "Channel unlocked."
+  },
+  "lockdown": {
+    "on": "Server locked down.",
+    "off": "Lockdown lifted."
+  },
+  "slowmode": {
+    "success": "Slowmode set to **{s}s**.",
+    "off": "Slowmode off.",
+    "invalid": "Use 0-21600 seconds."
+  },
+  "nick": {
+    "success": "Nickname set to **{nick}**.",
+    "reset": "Nickname reset."
+  },
+  "report": {
+    "success": "Report sent to staff.",
+    "need_text": "Describe the issue."
+  },
+  "unban": {
+    "success": "**{user}** unbanned."
+  },
+  "softban": {
+    "success": "**{user}** soft-banned (messages cleared)."
+  },
+  "tempban": {
+    "success": "**{user}** banned for **{duration}**.",
+    "expired": "Temp-ban expired for {user}.",
+    "invalid": "Duration must be 1-525600 minutes."
+  },
+  "massban": {
+    "success": "Banned **{n}** users."
+  },
+  "hackban": {
+    "success": "**{id}** hack-banned."
+  },
+  "untimeout": {
+    "success": "Timeout removed for **{user}**."
+  },
+  "tempmute": {
+    "success": "**{user}** muted for **{minutes}min**."
+  },
+  "unmute": {
+    "success": "**{user}** unmuted."
+  },
+  "voicekick": {
+    "success": "**{user}** disconnected from voice.",
+    "not_in_voice": "User is not in voice."
+  },
+  "voicemute": {
+    "success": "**{user}** voice-muted.",
+    "unmuted": "**{user}** voice-unmuted."
+  },
+  "reason": {
+    "success": "Case #{id} reason updated.",
+    "not_found": "Case not found."
+  },
+  "embeds": {
+    "success": "Success",
+    "error": "Error",
+    "info": "Information",
+    "warning": "Warning"
+  },
+  "engine": {
+    "levelup": "**{user}** reached level **{level}**.",
+    "afk_back": "Welcome back, {user}. AFK removed.",
+    "afk_mention": "**{user}** is AFK: {reason} (<t:{ts}:R>).",
+    "automod_reason": "Automod ({rule}).",
+    "automod_warned": "Removed by automod ({rule}).",
+    "log_msgdel": "Message deleted in <#{ch}> by **{user}**.",
+    "log_msgedit": "Message edited in <#{ch}> by **{user}**.",
+    "log_join": "**{user}** joined the server.",
+    "log_leave": "**{user}** left the server.",
+    "log_ban": "**{user}** was banned.",
+    "log_unban": "**{user}** was unbanned.",
+    "log_timeout": "**{user}** was timed out.",
+    "log_voice_join": "**{user}** joined voice **{ch}**.",
+    "log_voice_leave": "**{user}** left voice **{ch}**.",
+    "highlight": "{user}, **{word}** was mentioned here."
+  },
+  "alerts": {
+    "youtube_title": "New video"
+  },
+  "language": {
+    "current": "🌐 This server's current language: **{locale}**.",
+    "updated": "🌐 Server language changed to **{locale}**."
+  },
+  "serverinfo": {
+    "body": "**{name}** ({id})\nMembers: {members}\nOwner: {owner}\nCreated: <t:{created}:D>"
+  },
+  "member": {
+    "body": "**{tag}** ({id})\nJoined: <t:{joined}:R>\nAccount: <t:{created}:D>"
+  },
+  "banner": {
+    "none": "User has no banner."
+  },
+  "emojiinfo": {
+    "invalid": "Send a custom server emoji.",
+    "guild": "Server: {name}"
+  },
+  "inviteinfo": {
+    "body": "Server: **{guild}**\nChannel: {channel}\nMembers: {members} ({online} online)"
+  },
+  "membercount": {
+    "body": "Members: **{total}**"
+  },
+  "roles": {
+    "empty": "No roles."
+  },
+  "weather": {
+    "body": "**{city}**: {temp}C, {desc} (humidity {hum}%)"
+  },
+  "time": {
+    "body": "**{zone}**: {dt}"
+  },
+  "calc": {
+    "invalid": "Only numbers and + - * / ( ) % ^ allowed.",
+    "body": "**{expr}** = **{val}**"
+  },
+  "dict": {
+    "body": "**{word}**: {def}"
+  },
+  "timestamp": {
+    "invalid": "Use YYYY-MM-DD HH:mm."
+  },
+  "color": {
+    "invalid": "Use a 6-digit hex like #ff0000.",
+    "body": "RGB({r}, {g}, {b})"
+  },
+  "botinfo": {
+    "body": "Servers: **{guilds}**\nPing: {ping}ms\nUptime: {uptime}s"
+  },
+  "uptime": {
+    "body": "{h}h {m}m {ss}s"
+  },
+  "support": {
+    "body": "Need help? Contact the server staff."
+  },
+  "privacy": {
+    "body": "Data is stored locally (database.yml) for moderation, economy and configs."
+  },
+  "eightball": {
+    "answers": "Yes|No|Maybe|Ask again|Definitely|Doubt it"
+  },
+  "coinflip": {
+    "heads": "Heads",
+    "tails": "Tails"
+  },
+  "roll": {
+    "body": "Rolled **{v}** (d{sides})"
+  },
+  "rps": {
+    "tie": "Tie",
+    "win": "You win",
+    "lose": "You lose",
+    "body": "You: {u} vs Bot: {b}\n**{res}**"
+  },
+  "ship": {
+    "body": "**{a}** + **{b}** = **{pct}%**"
+  },
+  "pick": {
+    "empty": "Give at least one option."
+  },
+  "quote": {
+    "item": "Do it now.|Stay hungry.|Keep going.|Dream big.|Focus.|Be kind.|Never give up.|Create.|Learn daily.|Breathe."
+  },
+  "fact": {
+    "item": "Honey never spoils.|Octopuses have 3 hearts.|Bananas are berries.|Venus spins backwards.|Sharks existed before trees.|Water covers 71% of Earth.|Light takes 8min from the Sun.|Ants never sleep (rest).|Coffee is a fruit.|Sound is slower than light."
+  },
+  "truth": {
+    "item": "Biggest fear?|Last lie?|Secret talent?|Crush?|Regret?|Weird habit?|Last dream?|Guilty pleasure?|Proud moment?|Hidden skill?"
+  },
+  "dare": {
+    "item": "Do 10 pushups.|Sing a chorus.|Send a voice message.|Draw blindfolded.|Dance 30s.|Mimic someone.|Tell a joke.|Do a handstand.|Speak in accent.|Take a selfie."
+  },
+  "neverhaveiever": {
+    "item": "Skipped class.|Sang karaoke.|Traveled alone.|Ate sushi.|Pulled all-nighter.|Met celebrity.|Broken phone.|Camped.|Danced in rain.|Tried sushi twice."
+  },
+  "wouldyourather": {
+    "item": "Fly or be invisible?|Past or future?|Money or time?|Beach or mountain?|Sweet or salty?|Book or movie?|Early or late?|City or farm?|Sing or dance?|Hot or cold?"
+  },
+  "compliment": {
+    "item": "You are awesome.|Great vibe.|Super creative.|Very kind.|You shine.|Smart move.|Inspiring.|Great humor.|Strong mind.|You matter."
+  },
+  "birthday": {
+    "invalid": "Use DD/MM.",
+    "set": "Birthday set to **{date}**.",
+    "removed": "Birthday removed.",
+    "empty": "No birthdays saved.",
+    "channel": "Birthday channel: <#{ch}>."
+  },
+  "suggest": {
+    "sent": "Suggestion **#{id}** sent.",
+    "empty": "No suggestions.",
+    "line": "#{id} [{status}] {text}",
+    "notfound": "Suggestion not found.",
+    "updated": "Suggestion #{id} -> {status}."
+  },
+  "giveaway": {
+    "ends": "Ends in {m}m — react to join.",
+    "won": "{users} won **{prize}**.",
+    "nobody": "Nobody joined.",
+    "empty": "No giveaways.",
+    "notfound": "Giveaway not found.",
+    "ended": "Giveaway #{id} ended.",
+    "rerolled": "Giveaway #{id} rerolled."
+  },
+  "tag": {
+    "empty": "No tags.",
+    "notfound": "Tag not found.",
+    "deleted": "Tag **{name}** deleted.",
+    "saved": "Tag **{name}** saved."
+  },
+  "reminder": {
+    "dm": "Reminder: {text}",
+    "ok": "I will DM you in {minutes}m."
+  },
+  "afk": {
+    "ok": "AFK: {reason}.",
+    "empty": "Nobody AFK."
+  },
+  "highlight": {
+    "empty": "No highlight words. TODO: mention engine on message.",
+    "added": "Highlight **{word}** added.",
+    "removed": "Highlight **{word}** removed."
+  },
+  "setlog": {
+    "ok": "Log **{type}** -> <#{ch}>."
+  },
+  "logignore": {
+    "ok": "Toggled ignore for <#{ch}>. TODO: log engine."
+  },
+  "welcome": {
+    "ok": "Saved -> <#{ch}>. TODO: fire on member join."
+  },
+  "autorole": {
+    "ok": "Auto-role: <@&{role}>. TODO: apply on join.",
+    "removed": "Removed <@&{role}>."
+  },
+  "joindm": {
+    "ok": "Join DM saved. TODO: send on join."
+  },
+  "rank": {
+    "body": "**{user}** — level **{level}**, **{xp}** XP. (gain engine TODO)"
+  },
+  "xp": {
+    "body": "**{user}**: **{xp}** XP.",
+    "given": "Gave **{amount}** XP to {user} (now {xp}).",
+    "removed": "Removed **{amount}** XP from {user} (now {xp}).",
+    "reset": "XP reset."
+  },
+  "leaderboard": {
+    "empty": "No XP yet. Use /give-xp."
+  },
+  "levelreward": {
+    "ok": "Level {level} -> <@&{role}>. TODO: grant on level up."
+  },
+  "levelmsg": {
+    "ok": "Level message saved. TODO: send on level up."
+  },
+  "eco": {
+    "balance": "**{user}**: wallet **{wallet}** {cur}, bank **{bank}** {cur}.",
+    "daily_cd": "Come back in {h}h.",
+    "daily": "Claimed **{amt}** {cur}.",
+    "work": "Worked and earned **{amt}** {cur}.",
+    "crime": "Crime: **{amt}** {cur} ({good}).",
+    "rob_self": "You cannot rob yourself.",
+    "rob_poor": "Target is too poor.",
+    "rob_ok": "Robbed **{amt}** {cur}.",
+    "rob_fail": "Caught! Paid **{fine}** {cur}.",
+    "invalid_amt": "Amount must be positive.",
+    "no_funds": "Not enough funds.",
+    "paid": "Paid **{amount}** {cur} to {user}.",
+    "deposit": "Deposited **{amount}** {cur}.",
+    "withdraw": "Withdrew **{amount}** {cur}.",
+    "no_item": "You do not own that item.",
+    "gifted": "Gifted **{item}** to {user}.",
+    "reset": "Economy reset."
+  },
+  "shop": {
+    "empty": "Shop is empty.",
+    "notfound": "Item not found.",
+    "bought": "Bought **{item}**.",
+    "added": "Item **{item}** added.",
+    "edited": "Item **{item}** edited.",
+    "removed": "Item **{item}** removed."
+  },
+  "use": {
+    "ok": "Used **{item}**."
+  },
+  "inv": {
+    "empty": "Inventory empty."
+  },
+  "moneylb": {
+    "empty": "Nobody has coins yet."
+  },
+  "alert": {
+    "ok": "{type} alert: **{source}** -> <#{ch}>. TODO: check engine.",
+    "empty": "No alerts.",
+    "notfound": "Alert not found.",
+    "removed": "Alert #{n} removed."
+  },
+  "rr": {
+    "bademoji": "Invalid emoji for this server.",
+    "ok": "Reaction role created. TODO: grant on reaction events.",
+    "removed": "Reaction role removed.",
+    "empty": "No reaction roles."
+  },
+  "temprole": {
+    "ok": "**{user}** got temp role for {minutes}m."
+  },
+  "embed": {
+    "nodraft": "No draft. Use /embed-create first.",
+    "notext": "Channel is not text.",
+    "sent": "Embed sent."
+  },
+  "counter": {
+    "ok": "Counter channel created.",
+    "removed": "Counters removed."
+  },
+  "tempvoice": {
+    "ok": "Temp voice lobby saved.",
+    "off": "Temp voice disabled."
+  },
+  "sticky": {
+    "ok": "Sticky set.",
+    "removed": "Sticky removed."
+  },
+  "automod": {
+    "ok": "Rule **{rule}** -> {state}.",
+    "action": "Automod action: **{action}**.",
+    "exempt": "Exemptions updated."
+  },
+  "badword": {
+    "empty": "No bad words. TODO: filter engine.",
+    "added": "Added **{word}**.",
+    "removed": "Removed **{word}**."
+  },
+  "antiraid": {
+    "ok": "Anti-raid: {state}."
+  },
+  "joingate": {
+    "ok": "Join gate: {days}d."
+  },
+  "verify": {
+    "msg": "React/verify to get access.",
+    "ok": "Verify config saved."
+  },
+  "quarantine": {
+    "norole": "No Quarantine role.",
+    "on": "**{user}** quarantined.",
+    "off": "**{user}** released."
+  },
+  "panic": {
+    "ok": "Panic {state}."
+  },
+  "ticket": {
+    "panel": "Need help? Open a ticket.",
+    "setup": "Ticket panel posted.",
+    "added": "Added {user}.",
+    "removed": "Removed {user}.",
+    "closed": "Ticket closed.",
+    "reopened": "Ticket reopened.",
+    "deleting": "Deleting in 3s.",
+    "renamed": "Renamed to {name}.",
+    "claimed": "Claimed by {user}.",
+    "empty": "No messages.",
+    "escalated": "Ticket escalated.",
+    "form": "Form posted.",
+    "nostats": "No tickets yet.",
+    "stats": "Tickets: {n}."
+  }
+}

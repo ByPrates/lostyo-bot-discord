@@ -1,0 +1,448 @@
+{
+  "handler": {
+    "not_bot_owner": "Você não tem permissão, só o dono do bot pode usar isso!",
+    "not_bot_developer": "Você não é desenvolvedor do bot!",
+    "not_guild_owner": "Só o dono do servidor pode usar isso!",
+    "channel_not_nsfw": "Use em um canal NSFW!",
+    "missing_permissions": "Você não tem permissão para isso.",
+    "component_not_public": "Você não é o autor dessa interação!",
+    "cooldown": "Aguarde {cooldown}s para usar de novo."
+  },
+  "ping": {
+    "response": "**Pong!** {ping}ms"
+  },
+  "ban": {
+    "not_found": "Membro não encontrado.",
+    "success": "🔨 {user} banido. Motivo: {reason}"
+  },
+  "kick": {
+    "not_found": "Membro não encontrado.",
+    "success": "👢 {user} expulso. Motivo: {reason}"
+  },
+  "timeout": {
+    "not_found": "Membro não encontrado.",
+    "success": "⏱️ {user} em timeout por {minutes}min."
+  },
+  "mod_error": "Erro: {error}",
+  "common": {
+    "member_not_found": "Membro não encontrado.",
+    "user_not_found": "Usuário não encontrado.",
+    "no_permission_bot": "Não tenho permissão para isso."
+  },
+  "warn": {
+    "success": "**{user}** advertido. Total: **{total}**. Motivo: {reason}",
+    "case": "Caso #{id}"
+  },
+  "warnings": {
+    "title": "Advertências de {user}",
+    "empty": "Sem advertências.",
+    "line": "#{id} — {reason} · <t:{ts}:R>"
+  },
+  "clearwarn": {
+    "one": "Advertência #{id} removida.",
+    "all": "Todas removidas ({n}).",
+    "not_found": "Advertência não encontrada."
+  },
+  "note": {
+    "success": "Nota adicionada para **{user}**."
+  },
+  "notes": {
+    "empty": "Sem notas.",
+    "line": "#{id} — {text} · <t:{ts}:R>"
+  },
+  "case": {
+    "not_found": "Caso não encontrado.",
+    "line": "#{id} · {action} · {user} · {reason} · <t:{ts}:R>"
+  },
+  "history": {
+    "empty": "Sem histórico.",
+    "title": "Histórico de {user}"
+  },
+  "modlog": {
+    "empty": "Nada registrado.",
+    "title": "Mod log"
+  },
+  "modstats": {
+    "empty": "Sem stats.",
+    "title": "Stats de mods",
+    "line": "<@{id}> — **{n}** ações"
+  },
+  "purge": {
+    "success": "**{n}** mensagens apagadas.",
+    "invalid": "Use 1-100."
+  },
+  "lock": {
+    "locked": "Canal fechado.",
+    "unlocked": "Canal reaberto."
+  },
+  "lockdown": {
+    "on": "Servidor em lockdown.",
+    "off": "Lockdown removido."
+  },
+  "slowmode": {
+    "success": "Slowmode de **{s}s**.",
+    "off": "Slowmode off.",
+    "invalid": "Use 0-21600 segundos."
+  },
+  "nick": {
+    "success": "Apelido: **{nick}**.",
+    "reset": "Apelido resetado."
+  },
+  "report": {
+    "success": "Denúncia enviada à staff.",
+    "need_text": "Descreva o problema."
+  },
+  "unban": {
+    "success": "**{user}** desbanido."
+  },
+  "softban": {
+    "success": "**{user}** soft-banido (msgs limpas)."
+  },
+  "tempban": {
+    "success": "**{user}** banido por **{duration}**.",
+    "expired": "Temp-ban expirou: {user}.",
+    "invalid": "Duração deve ser 1-525600 minutos."
+  },
+  "massban": {
+    "success": "**{n}** usuários banidos."
+  },
+  "hackban": {
+    "success": "**{id}** hack-banido."
+  },
+  "untimeout": {
+    "success": "Timeout removido de **{user}**."
+  },
+  "tempmute": {
+    "success": "**{user}** mutado por **{minutes}min**."
+  },
+  "unmute": {
+    "success": "**{user}** desmutado."
+  },
+  "voicekick": {
+    "success": "**{user}** desconectado da call.",
+    "not_in_voice": "Usuário não está em call."
+  },
+  "voicemute": {
+    "success": "**{user}** mutado na call.",
+    "unmuted": "**{user}** desmutado na call."
+  },
+  "reason": {
+    "success": "Motivo do caso #{id} atualizado.",
+    "not_found": "Caso não encontrado."
+  },
+  "embeds": {
+    "success": "Sucesso",
+    "error": "Erro",
+    "info": "Informação",
+    "warning": "Atenção"
+  },
+  "engine": {
+    "levelup": "**{user}** chegou ao nível **{level}**.",
+    "afk_back": "Boas-vindas de volta, {user}. AFK removido.",
+    "afk_mention": "**{user}** está AFK: {reason} (<t:{ts}:R>).",
+    "automod_reason": "Automod ({rule}).",
+    "automod_warned": "Removido pelo automod ({rule}).",
+    "log_msgdel": "Mensagem apagada em <#{ch}> por **{user}**.",
+    "log_msgedit": "Mensagem editada em <#{ch}> por **{user}**.",
+    "log_join": "**{user}** entrou no servidor.",
+    "log_leave": "**{user}** saiu do servidor.",
+    "log_ban": "**{user}** foi banido.",
+    "log_unban": "**{user}** foi desbanido.",
+    "log_timeout": "**{user}** recebeu timeout.",
+    "log_voice_join": "**{user}** entrou na call **{ch}**.",
+    "log_voice_leave": "**{user}** saiu da call **{ch}**.",
+    "highlight": "{user}, **{word}** foi mencionada aqui."
+  },
+  "alerts": {
+    "youtube_title": "Vídeo novo"
+  },
+  "language": {
+    "current": "🌐 Idioma atual deste servidor: **{locale}**.",
+    "updated": "🌐 Idioma do servidor alterado para **{locale}**."
+  },
+  "serverinfo": {
+    "body": "**{name}** ({id})\nMembros: {members}\nDono: {owner}\nCriado em: <t:{created}:D>"
+  },
+  "member": {
+    "body": "**{tag}** ({id})\nEntrou: <t:{joined}:R>\nConta: <t:{created}:D>"
+  },
+  "banner": {
+    "none": "Usuário sem banner."
+  },
+  "emojiinfo": {
+    "invalid": "Envie um emoji customizado do servidor.",
+    "guild": "Servidor: {name}"
+  },
+  "inviteinfo": {
+    "body": "Servidor: **{guild}**\nCanal: {channel}\nMembros: {members} ({online} online)"
+  },
+  "membercount": {
+    "body": "Membros: **{total}**"
+  },
+  "roles": {
+    "empty": "Sem cargos."
+  },
+  "weather": {
+    "body": "**{city}**: {temp}C, {desc} (umidade {hum}%)"
+  },
+  "time": {
+    "body": "**{zone}**: {dt}"
+  },
+  "calc": {
+    "invalid": "Apenas números e + - * / ( ) % ^.",
+    "body": "**{expr}** = **{val}**"
+  },
+  "dict": {
+    "body": "**{word}**: {def}"
+  },
+  "timestamp": {
+    "invalid": "Use AAAA-MM-DD HH:mm."
+  },
+  "color": {
+    "invalid": "Use hex de 6 dígitos como #ff0000.",
+    "body": "RGB({r}, {g}, {b})"
+  },
+  "botinfo": {
+    "body": "Servidores: **{guilds}**\nPing: {ping}ms\nUptime: {uptime}s"
+  },
+  "uptime": {
+    "body": "{h}h {m}m {ss}s"
+  },
+  "support": {
+    "body": "Precisa de ajuda? Fale com a staff do servidor."
+  },
+  "privacy": {
+    "body": "Dados ficam locais (database.yml) para moderação, economia e configs."
+  },
+  "eightball": {
+    "answers": "Sim|Não|Talvez|Pergunte de novo|Com certeza|Duvido"
+  },
+  "coinflip": {
+    "heads": "Cara",
+    "tails": "Coroa"
+  },
+  "roll": {
+    "body": "Rolou **{v}** (d{sides})"
+  },
+  "rps": {
+    "tie": "Empate",
+    "win": "Você venceu",
+    "lose": "Você perdeu",
+    "body": "Você: {u} x Bot: {b}\n**{res}**"
+  },
+  "ship": {
+    "body": "**{a}** + **{b}** = **{pct}%**"
+  },
+  "pick": {
+    "empty": "Dê ao menos uma opção."
+  },
+  "quote": {
+    "item": "Faça agora.|Seja ambicioso.|Continue.|Sonhe grande.|Foque.|Seja gentil.|Nunca desista.|Crie.|Aprenda todo dia.|Respire."
+  },
+  "fact": {
+    "item": "Mel nunca estraga.|Polvos têm 3 corações.|Banana é baga.|Vênus gira ao contrário.|Tubarões são mais antigos que árvores.|Água cobre 71% da Terra.|Luz leva 8min do Sol.|Formigas descansam sem dormir.|Café é fruta.|Som é mais lento que luz."
+  },
+  "truth": {
+    "item": "Maior medo?|Última mentira?|Talento secreto?|Crush?|Arrependimento?|Hábito estranho?|Último sonho?|Prazer culposo?|Momento de orgulho?|Habilidade escondida?"
+  },
+  "dare": {
+    "item": "Faça 10 flexões.|Cante um refrão.|Mande áudio.|Desenhe de olhos fechados.|Dance 30s.|Imite alguém.|Conte piada.|Tente plantar bananeira.|Fale com sotaque.|Tire selfie."
+  },
+  "neverhaveiever": {
+    "item": "Faltei aula.|Cantei karaokê.|Viajei sozinho.|Comi sushi.|Virei a noite.|Vi famoso.|Quebrei celular.|Acampei.|Dancei na chuva.|Pulei de trampolim."
+  },
+  "wouldyourather": {
+    "item": "Voar ou invisível?|Passado ou futuro?|Dinheiro ou tempo?|Praia ou montanha?|Doce ou salgado?|Livro ou filme?|Cedo ou tarde?|Cidade ou campo?|Cantar ou dançar?|Calor ou frio?"
+  },
+  "compliment": {
+    "item": "Você é demais.|Vibe ótima.|Super criativo.|Muito gentil.|Você brilha.|Jogada inteligente.|Inspirador.|Ótimo humor.|Mente forte.|Você importa."
+  },
+  "birthday": {
+    "invalid": "Use DD/MM.",
+    "set": "Aniversário definido: **{date}**.",
+    "removed": "Aniversário removido.",
+    "empty": "Nenhum aniversário salvo.",
+    "channel": "Canal de aniversários: <#{ch}>."
+  },
+  "suggest": {
+    "sent": "Sugestão **#{id}** enviada.",
+    "empty": "Sem sugestões.",
+    "line": "#{id} [{status}] {text}",
+    "notfound": "Sugestão não encontrada.",
+    "updated": "Sugestão #{id} -> {status}."
+  },
+  "giveaway": {
+    "ends": "Termina em {m}m — reaja para participar.",
+    "won": "{users} ganhou **{prize}**.",
+    "nobody": "Ninguém participou.",
+    "empty": "Sem sorteios.",
+    "notfound": "Sorteio não encontrado.",
+    "ended": "Sorteio #{id} encerrado.",
+    "rerolled": "Sorteio #{id} sorteado de novo."
+  },
+  "tag": {
+    "empty": "Sem tags.",
+    "notfound": "Tag não encontrada.",
+    "deleted": "Tag **{name}** apagada.",
+    "saved": "Tag **{name}** salva."
+  },
+  "reminder": {
+    "dm": "Lembrete: {text}",
+    "ok": "Vou te chamar na DM em {minutes}m."
+  },
+  "afk": {
+    "ok": "AFK: {reason}.",
+    "empty": "Ninguém AFK."
+  },
+  "highlight": {
+    "empty": "Sem palavras. TODO: engine de menção por mensagem.",
+    "added": "Destaque **{word}** adicionado.",
+    "removed": "Destaque **{word}** removido."
+  },
+  "setlog": {
+    "ok": "Log **{type}** -> <#{ch}>."
+  },
+  "logignore": {
+    "ok": "Ignorar alternado p/ <#{ch}>. TODO: engine de logs."
+  },
+  "welcome": {
+    "ok": "Salvo -> <#{ch}>. TODO: disparar ao entrar."
+  },
+  "autorole": {
+    "ok": "Cargo auto: <@&{role}>. TODO: aplicar ao entrar.",
+    "removed": "Removido <@&{role}>."
+  },
+  "joindm": {
+    "ok": "DM de entrada salva. TODO: enviar ao entrar."
+  },
+  "rank": {
+    "body": "**{user}** — nível **{level}**, **{xp}** XP. (ganho auto TODO)"
+  },
+  "xp": {
+    "body": "**{user}**: **{xp}** XP.",
+    "given": "Deu **{amount}** XP a {user} (agora {xp}).",
+    "removed": "Removeu **{amount}** XP de {user} (agora {xp}).",
+    "reset": "XP resetado."
+  },
+  "leaderboard": {
+    "empty": "Sem XP ainda. Use /give-xp."
+  },
+  "levelreward": {
+    "ok": "Nível {level} -> <@&{role}>. TODO: dar ao upar."
+  },
+  "levelmsg": {
+    "ok": "Mensagem de level salva. TODO: enviar ao upar."
+  },
+  "eco": {
+    "balance": "**{user}**: carteira **{wallet}** {cur}, banco **{bank}** {cur}.",
+    "daily_cd": "Volte em {h}h.",
+    "daily": "Resgatou **{amt}** {cur}.",
+    "work": "Trabalhou e ganhou **{amt}** {cur}.",
+    "crime": "Crime: **{amt}** {cur} ({good}).",
+    "rob_self": "Você não pode roubar a si mesmo.",
+    "rob_poor": "Alvo muito pobre.",
+    "rob_ok": "Roubou **{amt}** {cur}.",
+    "rob_fail": "Pego! Pagou **{fine}** {cur}.",
+    "invalid_amt": "Quantidade deve ser positiva.",
+    "no_funds": "Saldo insuficiente.",
+    "paid": "Pagou **{amount}** {cur} a {user}.",
+    "deposit": "Depositou **{amount}** {cur}.",
+    "withdraw": "Sacou **{amount}** {cur}.",
+    "no_item": "Você não tem esse item.",
+    "gifted": "Presenteou **{item}** a {user}.",
+    "reset": "Economia resetada."
+  },
+  "shop": {
+    "empty": "Loja vazia.",
+    "notfound": "Item não encontrado.",
+    "bought": "Comprou **{item}**.",
+    "added": "Item **{item}** adicionado.",
+    "edited": "Item **{item}** editado.",
+    "removed": "Item **{item}** removido."
+  },
+  "use": {
+    "ok": "Usou **{item}**."
+  },
+  "inv": {
+    "empty": "Inventário vazio."
+  },
+  "moneylb": {
+    "empty": "Ninguém tem moedas ainda."
+  },
+  "alert": {
+    "ok": "Alerta {type}: **{source}** -> <#{ch}>. TODO: engine de checagem.",
+    "empty": "Sem alertas.",
+    "notfound": "Alerta não encontrado.",
+    "removed": "Alerta #{n} removido."
+  },
+  "rr": {
+    "bademoji": "Emoji inválido para este servidor.",
+    "ok": "Cargo por reação criado. TODO: dar nos eventos de reação.",
+    "removed": "Cargo por reação removido.",
+    "empty": "Sem cargos por reação."
+  },
+  "temprole": {
+    "ok": "**{user}** com cargo temp por {minutes}m."
+  },
+  "embed": {
+    "nodraft": "Sem rascunho. Use /embed-create antes.",
+    "notext": "Canal não é de texto.",
+    "sent": "Embed enviado."
+  },
+  "counter": {
+    "ok": "Canal de contador criado.",
+    "removed": "Contadores removidos."
+  },
+  "tempvoice": {
+    "ok": "Lobby de voz temp salvo.",
+    "off": "Voz temp desligada."
+  },
+  "sticky": {
+    "ok": "Sticky definida.",
+    "removed": "Sticky removida."
+  },
+  "automod": {
+    "ok": "Regra **{rule}** -> {state}.",
+    "action": "Ação do automod: **{action}**.",
+    "exempt": "Isenções atualizadas."
+  },
+  "badword": {
+    "empty": "Sem palavras. TODO: engine de filtro.",
+    "added": "Adicionada **{word}**.",
+    "removed": "Removida **{word}**."
+  },
+  "antiraid": {
+    "ok": "Anti-raid: {state}."
+  },
+  "joingate": {
+    "ok": "Join gate: {days}d."
+  },
+  "verify": {
+    "msg": "Verifique-se para ter acesso.",
+    "ok": "Config de verificação salva."
+  },
+  "quarantine": {
+    "norole": "Sem cargo Quarantine.",
+    "on": "**{user}** em quarentena.",
+    "off": "**{user}** liberado."
+  },
+  "panic": {
+    "ok": "Pânico {state}."
+  },
+  "ticket": {
+    "panel": "Precisa de ajuda? Abra um ticket.",
+    "setup": "Painel de tickets postado.",
+    "added": "Adicionado {user}.",
+    "removed": "Removido {user}.",
+    "closed": "Ticket fechado.",
+    "reopened": "Ticket reaberto.",
+    "deleting": "Apagando em 3s.",
+    "renamed": "Renomeado para {name}.",
+    "claimed": "Assumido por {user}.",
+    "empty": "Sem mensagens.",
+    "escalated": "Ticket escalado.",
+    "form": "Formulário postado.",
+    "nostats": "Sem tickets ainda.",
+    "stats": "Tickets: {n}."
+  }
+}

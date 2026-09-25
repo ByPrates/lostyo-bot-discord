@@ -1,0 +1,48 @@
+[90m[02:01:09][39m [34m[Info][39m Loaded new application command: group-mod.js
+[90m[02:01:09][39m [34m[Info][39m Loaded new application command: group-modtools.js
+[90m[02:01:09][39m [34m[Info][39m Loaded new application command: group-alerts.js
+[90m[02:01:09][39m [34m[Info][39m Loaded new application command: group-antiraid.js
+[90m[02:01:09][39m [34m[Info][39m Loaded new application command: group-automod.js
+[90m[02:01:09][39m [34m[Info][39m Loaded new application command: group-birthday.js
+[90m[02:01:09][39m [34m[Info][39m Loaded new application command: group-counter.js
+[90m[02:01:09][39m [34m[Info][39m Loaded new application command: group-eco.js
+[90m[02:01:09][39m [34m[Info][39m Loaded new application command: group-embed.js
+[90m[02:01:09][39m [34m[Info][39m Loaded new application command: group-fun.js
+[90m[02:01:09][39m [34m[Info][39m Loaded new application command: group-info.js
+[90m[02:01:09][39m [34m[Info][39m Loaded new application command: group-levels.js
+[90m[02:01:09][39m [34m[Info][39m Loaded new application command: group-logs.js
+[90m[02:01:09][39m [34m[Info][39m Loaded new application command: messagecontext-messageinfo.js
+[90m[02:01:09][39m [34m[Info][39m Loaded new application command: usercontext-userinfo.js
+[90m[02:01:09][39m [34m[Info][39m Loaded new application command: group-giveaway.js
+[90m[02:01:09][39m [34m[Info][39m Loaded new application command: group-roles.js
+[90m[02:01:09][39m [34m[Info][39m Loaded new application command: group-sticky.js
+[90m[02:01:09][39m [34m[Info][39m Loaded new application command: group-suggest.js
+[90m[02:01:09][39m [34m[Info][39m Loaded new application command: group-tags.js
+[90m[02:01:09][39m [34m[Info][39m Loaded new application command: group-ticket.js
+[90m[02:01:09][39m [34m[Info][39m Loaded new application command: group-utility.js
+[90m[02:01:09][39m [34m[Info][39m Loaded new application command: group-voice.js
+[90m[02:01:09][39m [34m[Info][39m Loaded new application command: group-welcome.js
+[90m[02:01:09][39m [32m[OK][39m Successfully loaded 24 application commands and 0 message commands.
+[90m[02:01:09][39m [34m[Info][39m Loaded new component (type: button) : ticket-open.js
+[90m[02:01:09][39m [32m[OK][39m Successfully loaded 2 components.
+[90m[02:01:09][39m [34m[Info][39m Loaded new event: onMessageXp.js
+[90m[02:01:09][39m [34m[Info][39m Loaded new event: onReady.js
+[90m[02:01:09][39m [34m[Info][39m Loaded new event: onVoiceTemp.js
+[90m[02:01:09][39m [34m[Info][39m Loaded new event: guildMemberAdd.js
+[90m[02:01:09][39m [34m[Info][39m Loaded new event: guildMemberRemove.js
+[90m[02:01:09][39m [34m[Info][39m Loaded new event: onLogBan.js
+[90m[02:01:09][39m [34m[Info][39m Loaded new event: onLogDelete.js
+[90m[02:01:09][39m [34m[Info][39m Loaded new event: onLogLeave.js
+[90m[02:01:09][39m [34m[Info][39m Loaded new event: onLogMember.js
+[90m[02:01:09][39m [34m[Info][39m Loaded new event: onLogTimeout.js
+[90m[02:01:09][39m [34m[Info][39m Loaded new event: onLogUnban.js
+[90m[02:01:09][39m [34m[Info][39m Loaded new event: onLogUpdate.js
+[90m[02:01:09][39m [34m[Info][39m Loaded new event: onLogVoice.js
+[90m[02:01:09][39m [32m[OK][39m Successfully loaded 13 events.
+[90m[02:01:09][39m [32m[OK][39m Bot API listening on port 3001
+[90m[02:01:09][39m [32m[OK][39m Logged in as Lostyo, took 1.631s.
+[90m[02:01:09][39m [34m[Info][39m [db] backend: yaml.
+[90m[02:01:09][39m [34m[Info][39m [sched] restored 0 pending timer(s).
+[90m[02:01:09][39m [34m[Info][39m [alerts] loop armed (10min).
+[90m[02:01:09][39m [34m[Info][39m [counters] loop armed (30min).
+[90m[02:01:09][39m [32m[OK][39m Successfully registered application commands. For specific guild? Yes

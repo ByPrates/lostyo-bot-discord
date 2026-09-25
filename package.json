@@ -1,0 +1,21 @@
+{
+  "name": "lostyo-bot-discord",
+  "version": "1.0.0",
+  "description": "Bot admin de Discord — discord.js v14 + handler de comandos.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "keywords": [
+    "discord",
+    "discord.js"
+  ],
+  "license": "GPL-3.0-only",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.117.0",
+    "colors": "^1.4.0",
+    "discord.js": "^14.25.0",
+    "dotenv": "^16.4.5",
+    "quick-yaml.db": "^1.2.2"
+  }
+}

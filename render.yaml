@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: lostyo-bot-discord
+    runtime: node
+    buildCommand: npm install
+    startCommand: node .
+    healthCheckPath: /api/health
+    envVars:
+      - key: BOT_API_PORT
+        value: 3001
+      - key: CLIENT_TOKEN
+        sync: false
+      - key: DASHBOARD_API_SECRET
+        sync: false
+      - key: SITE_URL
+        sync: false
