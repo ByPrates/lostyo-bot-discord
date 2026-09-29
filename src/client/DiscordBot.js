@@ -13,7 +13,6 @@ const ComponentsListener = require("./handler/ComponentsListener");
 const EventsHandler = require("./handler/EventsHandler");
 const { createDatabase } = require('../db');
 const { setDatabase } = require('../utils/i18n');
-const { getRandomStatus } = require('../utils/randomStatus');
 
 class DiscordBot extends Client {
     collection = {
@@ -48,9 +47,9 @@ class DiscordBot extends Client {
             ],
             presence: {
                 activities: [{
-                    name: 'keep this empty',
+                    name: 'discord.gg/lostyo',
                     type: 4,
-                    state: '/help'
+                    state: 'discord.gg/lostyo'
                 }]
             }
         });
@@ -64,17 +63,10 @@ class DiscordBot extends Client {
     }
 
     startStatusRotation = () => {
-        // Intercalado: 1 aleatório, 1 /help, 1 aleatório, 1 /help...
-        let index = 0;
-        const tick = async () => {
-            try {
-                const text = index % 2 === 0 ? await getRandomStatus() : '/help';
-                this.user.setPresence({ activities: [{ name: text, type: 4 }] });
-            } catch {}
-            index++;
-        };
-        tick();
-        setInterval(tick, 10000);
+        // Status fixo — sem rotação.
+        try {
+            this.user?.setPresence({ activities: [{ name: 'discord.gg/lostyo', type: 4, state: 'discord.gg/lostyo' }] });
+        } catch {}
     }
 
     connect = async () => {
