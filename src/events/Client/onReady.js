@@ -17,7 +17,7 @@ async function updateCounters(client) {
                 const ch = await client.channels.fetch(c.channelId).catch(() => null);
                 if (!ch) continue;
                 let label = null;
-                if (c.type === 'members') label = 'Members: ' + guild.memberCount;
+                if (c.type === 'members') label = '👥 Membros: ' + guild.memberCount;
                 else if (c.type === 'bots') {
                     try {
                         const members = await guild.members.fetch().catch(() => null);

@@ -17,8 +17,14 @@ class CommandsHandler {
     }
 
     load = () => {
+        const config = require('../../config');
+        const disabled = new Set(config.disabledCommands || []);
         for (const directory of readdirSync('./src/commands/')) {
             for (const file of readdirSync('./src/commands/' + directory).filter((f) => f.endsWith('.js'))) {
+                if (disabled.has(file)) {
+                    info('Skipped disabled command: ' + file);
+                    continue;
+                }
                 try {
                     /**
                      * @type {ApplicationCommand['data'] | MessageCommand['data']}

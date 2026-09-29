@@ -25,7 +25,7 @@ const handlers = {
         const type = interaction.options.getString('type', true);
         const g = interaction.guild;
         let label = type + ': 0';
-        if (type === 'members') label = 'Members: ' + g.memberCount;
+        if (type === 'members') label = '👥 Membros: ' + g.memberCount;
         if (type === 'bots') label = 'Bots: ' + g.members.cache.filter(m => m.user.bot).size;
         if (type === 'roles') label = 'Roles: ' + g.roles.cache.size;
         const ch = await g.channels.create({ name: label, type: ChannelType.GuildVoice });

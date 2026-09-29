@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Bot admin de Discord — discord.js v14 + handler de comandos.",
   "main": "src/index.js",
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "start": "node ."
   },
