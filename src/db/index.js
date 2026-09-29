@@ -57,9 +57,9 @@ function createMemoryShim() {
 }
 
 class HybridDB {
-    constructor(path) {
+    constructor(dbPath) {
         const candidates = [];
-        const base = path || './data/database.yml';
+        const base = dbPath || './data/database.yml';
         candidates.push(base);
         // Caminhos absolutos comuns no host (volume persistente montado em /app/data).
         if (!path.isAbsolute(base)) {
