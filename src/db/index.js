@@ -35,14 +35,53 @@ function tryCreateSupabase() {
     }
 }
 
+function ensureYamlFile(p) {
+    const resolved = path.isAbsolute(p) ? p : path.resolve(process.cwd(), p);
+    fs.mkdirSync(path.dirname(resolved), { recursive: true });
+    if (!fs.existsSync(resolved)) fs.writeFileSync(resolved, '{}\n', 'utf-8');
+    return resolved;
+}
+
+// Fallback em memória (mesma interface) — último recurso pra nunca crashar.
+function createMemoryShim() {
+    const m = new Map();
+    return {
+        get: (k) => (m.has(String(k)) ? m.get(String(k)) : undefined),
+        set: (k, v) => { m.set(String(k), v); },
+        has: (k) => m.has(String(k)),
+        delete: (k) => { m.delete(String(k)); },
+        keys: () => [...m.keys()],
+        entries: () => [...m.entries()],
+        get size() { return m.size; },
+    };
+}
+
 class HybridDB {
     constructor(path) {
-        try {
-            const resolved = path && path.startsWith('/') ? path : path && /^[A-Za-z]:\\/.test(path) ? path : require('node:path').resolve(process.cwd(), path || './database.yml');
-            require('node:fs').mkdirSync(require('node:path').dirname(resolved), { recursive: true });
-            if (!require('node:fs').existsSync(resolved)) require('node:fs').writeFileSync(resolved, '', 'utf-8');
-        } catch {}
-        this.yaml = new QuickYAML(path);
+        const candidates = [];
+        const base = path || './data/database.yml';
+        candidates.push(base);
+        // Caminhos absolutos comuns no host (volume persistente montado em /app/data).
+        if (!path.isAbsolute(base)) {
+            candidates.push(path.resolve(process.cwd(), base));
+            candidates.push('/app/data/database.yml');
+            candidates.push(path.resolve('/tmp', 'database.yml'));
+        }
+        let lastErr = null;
+        for (const c of candidates) {
+            try {
+                const resolved = ensureYamlFile(c);
+                this.yaml = new QuickYAML(resolved);
+                this.dbPath = resolved;
+                lastErr = null;
+                break;
+            } catch (e) { lastErr = e; }
+        }
+        if (!this.yaml) {
+            console.error('[ANTI-CRASH] YAML indisponível, usando memória volátil:', lastErr && lastErr.message || lastErr);
+            this.yaml = createMemoryShim();
+            this.dbPath = ':memory:';
+        }
         this.sb = tryCreateSupabase();
         this.backend = this.sb ? 'supabase+yaml' : 'yaml';
         this._pending = 0;
