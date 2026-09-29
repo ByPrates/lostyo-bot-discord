@@ -7,6 +7,8 @@
 //   quebrar o bot se a rede falhar). No boot, `syncFromRemote()` puxa o kv_store remoto
 //   para o cache local (remoto vence em caso de divergência).
 // - Tabela remota: kv_store(guild_id TEXT, key TEXT, value JSONB). Ver src/db/schema.sql.
+const fs = require('node:fs');
+const path = require('node:path');
 const { QuickYAML } = require('quick-yaml.db');
 
 function getEnv(name, fallback = undefined) {
@@ -35,6 +37,11 @@ function tryCreateSupabase() {
 
 class HybridDB {
     constructor(path) {
+        try {
+            const resolved = path && path.startsWith('/') ? path : path && /^[A-Za-z]:\\/.test(path) ? path : require('node:path').resolve(process.cwd(), path || './database.yml');
+            require('node:fs').mkdirSync(require('node:path').dirname(resolved), { recursive: true });
+            if (!require('node:fs').existsSync(resolved)) require('node:fs').writeFileSync(resolved, '', 'utf-8');
+        } catch {}
         this.yaml = new QuickYAML(path);
         this.sb = tryCreateSupabase();
         this.backend = this.sb ? 'supabase+yaml' : 'yaml';
