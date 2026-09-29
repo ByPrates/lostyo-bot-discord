@@ -23,6 +23,20 @@ class ComponentsListener {
                 return true;
             }
 
+            const safeRun = async (component, kind) => {
+                try {
+                    await component.run(client, interaction);
+                } catch (err) {
+                    error(err);
+                    try {
+                        if (kind === 'autocomplete') return;
+                        const msg = '⚠️ Deu um erro aqui, mas o bot continua online. Tenta de novo.';
+                        if (interaction.deferred || interaction.replied) await interaction.followUp({ content: msg, flags: MessageFlags.Ephemeral }).catch(() => {});
+                        else if (interaction.isRepliable()) await interaction.reply({ content: msg, flags: MessageFlags.Ephemeral }).catch(() => {});
+                    } catch {}
+                }
+            };
+
             try {
                 if (interaction.isButton()) {
                     const component = client.collection.components.buttons.get(interaction.customId);
@@ -31,11 +45,7 @@ class ComponentsListener {
 
                     if (!(await checkUserPermissions(component))) return;
 
-                    try {
-                        component.run(client, interaction);
-                    } catch (err) {
-                        error(err);
-                    }
+                    await safeRun(component, 'button');
 
                     return;
                 }
@@ -47,11 +57,7 @@ class ComponentsListener {
 
                     if (!(await checkUserPermissions(component))) return;
 
-                    try {
-                        component.run(client, interaction);
-                    } catch (err) {
-                        error(err);
-                    }
+                    await safeRun(component, 'select');
 
                     return;
                 }
@@ -61,11 +67,7 @@ class ComponentsListener {
 
                     if (!component) return;
 
-                    try {
-                        component.run(client, interaction);
-                    } catch (err) {
-                        error(err);
-                    }
+                    await safeRun(component, 'modal');
 
                     return;
                 }
@@ -75,11 +77,7 @@ class ComponentsListener {
 
                     if (!component) return;
 
-                    try {
-                        component.run(client, interaction);
-                    } catch (err) {
-                        error(err);
-                    }
+                    await safeRun(component, 'autocomplete');
 
                     return;
                 }

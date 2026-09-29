@@ -35,10 +35,19 @@ class EventsHandler {
                             continue;
                         }
 
+                        const safeRun = (...args) => {
+                            try {
+                                const r = module.run(this.client, ...args);
+                                if (r && typeof r.catch === 'function') r.catch((e) => error('Event ' + file + ' falhou (sem crash): ' + (e && e.message || e)));
+                            } catch (e) {
+                                error('Event ' + file + ' falhou (sem crash): ' + (e && e.message || e));
+                            }
+                        };
+
                         if (module.once) {
-                            this.client.once(module.event, (...args) => module.run(this.client, ...args));
+                            this.client.once(module.event, safeRun);
                         } else {
-                            this.client.on(module.event, (...args) => module.run(this.client, ...args));
+                            this.client.on(module.event, safeRun);
                         }
 
                         info(`Loaded new event: ` + file);

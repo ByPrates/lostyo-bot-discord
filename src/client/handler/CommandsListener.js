@@ -83,9 +83,14 @@ class CommandsListener {
                     if (!commandContinue) return;
                 }
 
-                command.run(client, interaction);
+                await command.run(client, interaction);
             } catch (err) {
                 error(err);
+                try {
+                    const msg = '⚠️ Deu um erro aqui, mas o bot continua online. Tenta de novo.';
+                    if (interaction.deferred || interaction.replied) await interaction.followUp({ content: msg, flags: MessageFlags.Ephemeral }).catch(() => {});
+                    else await interaction.reply({ content: msg, flags: MessageFlags.Ephemeral }).catch(() => {});
+                } catch {}
             }
         });
     }
