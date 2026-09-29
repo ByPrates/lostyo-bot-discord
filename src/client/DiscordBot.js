@@ -1,7 +1,12 @@
 const { Client, Collection, Partials } = require("discord.js");
 const CommandsHandler = require("./handler/CommandsHandler");
 const { warn, error, info, success } = require("../utils/Console");
-const config = require("../config");
+let config;
+try {
+    config = require("../config");
+} catch {
+    config = require("../config.example");
+}
 const CommandsListener = require("./handler/CommandsListener");
 const ComponentsHandler = require("./handler/ComponentsHandler");
 const ComponentsListener = require("./handler/ComponentsListener");
