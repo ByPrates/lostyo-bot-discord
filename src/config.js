@@ -1,6 +1,6 @@
 const config = {
     database: {
-        path: './database.yml'
+        path: './data/database.yml'
     },
     development: {
         // Bot público: deixe enabled=true e coloque o ID do servidor de staff/suporte.
